@@ -20,7 +20,6 @@ class Book(models.Model):
     order = models.IntegerField(
         db_column='nb_order',
         null=False,
-
     )
     testament = models.CharField(
         db_column='cs_testament',
@@ -39,7 +38,6 @@ class Chapter(models.Model):
         db_column='id',
         null=False,
         primary_key=True,
-
     )
     number = models.IntegerField(
         db_column='nb_number',
@@ -133,7 +131,6 @@ class Plan(models.Model):
         db_column='id',
         null=False,
         primary_key=True,
-
     )
     date = models.DateField(
         db_column='dt_date',
@@ -172,8 +169,7 @@ class User(models.Model):
         db_column='tx_name',
         max_length=100,
         null=False
-    ),
-
+    )
     username = models.CharField(
         db_column='tx_username',
         max_length=100,
